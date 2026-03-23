@@ -19,6 +19,11 @@ public class TinyFisch {
     public static final String MOD_ID = "tinyfisch";
     public static final Logger LOGGER = LogUtils.getLogger();
 
+
+    public static Identifier id(String s) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, s);
+    }
+
     public TinyFisch(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
