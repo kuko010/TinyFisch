@@ -1,6 +1,7 @@
 package net.kuko.tinyish;
 
 import com.mojang.logging.LogUtils;
+import net.kuko.tinyish.registries.ModBlocks;
 import net.kuko.tinyish.registries.ModItems;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
@@ -27,6 +28,7 @@ public class TinyIsh {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
