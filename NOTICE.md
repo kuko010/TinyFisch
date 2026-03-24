@@ -1,0 +1,1 @@
+- **License:** MIT (see `LICENSES/MIT-[project].txt` for full text)
